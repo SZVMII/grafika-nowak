@@ -39,3 +39,13 @@ zad10T=zad10-mean(zad10)
 
 %zad11
 zad11=[1:3;4,5,4]
+dim=size(e)
+e2 = -1 + 2 * rand(dim(1), dim(2))
+
+%zad12
+zad12 = floor(5*rand(4,3))
+for i = 1:size(zad12,1)
+  for j = 2:size(zad12,2)
+    f(i,j) = f(i,j) + f(i,j-1);
+  end
+end
