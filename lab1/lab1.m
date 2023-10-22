@@ -46,6 +46,18 @@ e2 = -1 + 2 * rand(dim(1), dim(2))
 zad12 = floor(5*rand(4,3))
 for i = 1:size(zad12,1)
   for j = 2:size(zad12,2)
-    f(i,j) = f(i,j) + f(i,j-1);
+    zad12(i,j) = zad12(i,j) + zad12(i,j-1);
   end
 end
+
+--------------------------------------------
+
+zad12a = [2,3,0,0;4,3,4,1;4,2,3,1]
+for i = 1:size(zad12a,1)
+  for j = 1:size(zad12a,2)
+    if zad12a(i,j) > 3
+      zad12a(i,j) = 0;
+    endif
+  endfor
+ endfor5]
+d-mean(d)
